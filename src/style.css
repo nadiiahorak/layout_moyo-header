@@ -1,3 +1,62 @@
 body {
   margin: 0;
 }
+
+.header1, .header2 {
+  position: relative;
+  width: 1200px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+.item {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  color: black;
+  margin: 0 10px;
+}
+
+.item-apple {
+  color: #00acdc;
+}
+
+.item-laptops {
+  color: #00acdc;
+}
+
+.item-apple.is-active::after {
+  content: '';
+  display: block;
+  width: 37px;
+  height: 4px;
+  position: absolute;
+  bottom: -23px;
+  border-radius: 8px;
+  background-color: #00acdc;
+}
+
+img {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  left: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header2 {
+    width: 1024px;
+    height: 60px;
+  }
+}
